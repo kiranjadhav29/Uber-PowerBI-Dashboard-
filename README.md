@@ -1,10 +1,21 @@
-# Uber-PowerBI-Dashboard-
+# Uber Data Analysis Project
 
 Data Analysis Project | SQL + Python + Power BI | 150,000 Ride Bookings
 
-📊 Project Overview
-Analyzed 150,000 Uber ride bookings to identify operational inefficiencies and revenue optimization opportunities using SQL, Python statistical analysis, and Power BI dashboards.
-Key Finding: Identified supply-demand gaps in specific zones during peak hours, representing ₹18-22 Lakhs weekly revenue opportunity.
+---
+
+## 📊 Project Overview
+
+This project analyzes 150,000 Uber ride booking records to understand:
+
+- Cancellation patterns  
+- Customer behavior  
+- Revenue distribution  
+- Operational inefficiencies  
+
+The analysis is performed using **SQL for querying**, **Python for data processing & advanced analysis**, and **Power BI for visualization**.
+
+---
 <img width="1366" height="730" alt="Screenshot 2026-01-10 122419" src="https://github.com/user-attachments/assets/1ee207b9-f7fe-47f0-b1cf-59a887a33a13" />
 <img width="1338" height="725" alt="Screenshot 2026-01-10 122433" src="https://github.com/user-attachments/assets/8b2f0a84-80d2-4a33-93a9-a79dfa897f06" />
 <img width="1360" height="717" alt="Screenshot 2026-01-10 122446" src="https://github.com/user-attachments/assets/13c61522-935d-40bf-ace1-252b9697b9a8" />
@@ -13,75 +24,91 @@ Key Finding: Identified supply-demand gaps in specific zones during peak hours, 
 <img width="1354" height="724" alt="Screenshot 2026-01-10 122521" src="https://github.com/user-attachments/assets/6be5ba01-b6ef-483b-913c-8e7d87a33861" />
 
 
-🎯 Business Problem
-Uber operations faced:
+## 🎯 Business Problem
 
--25% cancellation rate across bookings
--Unknown root causes of cancellations
--Need to optimize driver deployment
--Revenue leakage from failed bookings
+The dataset highlights key operational challenges:
 
-Goal: Identify actionable patterns to reduce cancellations and increase revenue.
+- ~25% booking cancellation rate  
+- Driver availability issues in certain locations  
+- Low customer retention  
+- Need to understand revenue-driving patterns  
 
-🛠️ Tools Used
+---
 
-SQL - Data extraction and aggregation
-Python - Statistical analysis (pandas, scipy, matplotlib)
-Power BI - Interactive dashboard
+## 🛠️ Tools Used
 
-🔍 Key Findings
--Cancellation Analysis
+- **SQL (SQLite)** – Data extraction and aggregation  
+- **Python (Pandas, Matplotlib)** – Data cleaning, cohort analysis, segmentation  
+- **Power BI** – Dashboard and visualization  
 
-Overall Rate: 25% of bookings cancelled
-Peak Issues: Certain zones show 72% higher cancellation rates
-Root Cause: Driver supply constraints in specific areas/times
+---
 
--Customer Insights
+## 🔍 Key Insights
 
-First-month Churn: 94.6% of customers don't return
-Retention Opportunity: ₹12.9 Cr through targeted programs
-Segmentation: 74% one-time users vs 26% repeat customers
+### 📌 Cancellation Analysis
+- Around **25% of bookings are cancelled**
+- Cancellation rate is **consistent across hours**
+- Indicates **system-level inefficiency rather than time-specific issue**
 
--Revenue Opportunities
+---
 
-Total Identified: ₹21.6 Cr annual optimization potential
-Top Priority: Driver deployment to high-demand zones
-Expected ROI: 1,864% on recommended interventions
+### 📌 Customer Behavior
+- Majority users are **one-time customers**
+- Repeat users contribute **significant portion of revenue**
+- Customer retention drops sharply after first ride  
 
+---
 
-📊 Sample Visualizations
-Cohort Retention Analysis
-Shows dramatic 94.6% first-month customer churn across all acquisition cohorts.
-Customer Segmentation
-Revenue distribution: 74% one-time users contribute 51% of revenue, while 26% occasional users contribute 49%.
+### 📌 Customer Segmentation
+- One-time users → Majority  
+- Occasional users → Key revenue contributors  
+- Regular/VIP users → Very small segment  
 
-🚀 Business Recommendations
--Priority 1: Second-Ride Incentive Program
+---
 
-Investment: ₹9.5 Lakhs
-Expected Return: ₹89.5 Lakhs
-ROI: 940%
-Action: 20% discount on second ride within 14 days
+### 📌 Operational Insights
+- Some locations show **higher "No Driver Found" cases**
+- Indicates **localized supply-demand mismatch**
 
--Priority 2: Zone-Based Driver Deployment
+---
 
-Problem: Supply gaps in suburban zones during evening hours
-Investment: ₹8.5L monthly (driver incentives)
-Expected Recovery: ₹13-17L monthly (60-75% of lost bookings)
-Net Gain: ₹4.5-8.5L monthly
+### 📌 Revenue Patterns
+- Revenue is primarily driven by **completed rides**
+- High-value routes exist but are **less frequent**
 
--Priority 3: Dynamic Pricing Optimization
+---
 
-Finding: Distance doesn't correlate with revenue (r=0.006)
-Opportunity: Review pricing strategy for different trip types
-Potential Impact: ₹1.2 Cr through optimized pricing
+## 📊 Python Analysis
 
+- Data cleaning and preprocessing  
+- Cohort analysis for customer retention  
+- Customer segmentation based on ride frequency  
+- Visualization of retention and usage patterns  
 
-📈 What I Learned
+---
 
--Complex SQL queries (CTEs, window functions, joins)
--Python for Analysis
--Statistical testing (chi-square, ANOVA, correlation)
--Customer segmentation and cohort analysis
--Executive dashboard design in Power BI
-Translating data insights into business recommendations
+## 📈 What This Project Demonstrates
+
+- Writing **SQL queries (aggregation, CASE WHEN, GROUP BY, CTEs)**  
+- Handling real-world data issues (nulls, types, filtering)  
+- Using Python for **data cleaning and analysis**  
+- Understanding **customer behavior and business patterns**  
+- Building **interactive dashboards in Power BI**  
+
+---
+
+## 🚀 Key Learnings
+
+- Importance of clean data before analysis  
+- Difference between querying (SQL) and analysis (Python)  
+- Translating raw data into meaningful insights  
+- Communicating findings clearly through dashboards  
+
+---
+
+## 📌 Final Conclusion
+
+- Cancellation rate is consistently high (~25%)  
+- Customer retention is low  
+- Revenue depends on repeat users  
+- Some operational inefficiencies exist in driver availability  
